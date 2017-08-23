@@ -1,0 +1,12 @@
+
+.mobilerender {
+   margin: auto;
+   width: 412px;
+   height: 732px;
+   border: 1px solid black;
+
+}
+.center {
+   display: block;
+   margin:auto;
+}
