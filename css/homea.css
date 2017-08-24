@@ -8,5 +8,47 @@
 }
 .center {
    display: block;
-   margin:auto;
+   margin: auto;
+   text-align: center;
+}
+
+.backbutton {
+   display: block;
+   margin: auto;
+}
+
+.footer {
+   position:absolute;
+   bottom:0;
+   left:0;
+   right:0;
+}
+
+.overlay {
+    background-color: rgb(169,169,169);
+    width: 412px;
+    height: 732px;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+
+.confirmboxhidden {
+    display: none;
+    margin:auto;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.confirmboxshow {
+    background-color: rgb(255,255,255);
+    opacity: 1;
+    display:block;
+    margin:auto;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    z-index: 999;
+    text-align: center;
 }
