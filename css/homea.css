@@ -13,12 +13,12 @@
 }
 
 .backbutton {
+   padding-top: 10px;
    display: block;
    margin: auto;
 }
 
 .footer {
-   position:absolute;
    bottom:0;
    left:0;
    right:0;
