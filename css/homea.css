@@ -52,3 +52,34 @@
     z-index: 999;
     text-align: center;
 }
+.low {
+     background-image: url("../img/low.png");
+     background-size: 60px 100px;
+}
+.med {
+     background-image: url("../img/medium.png");
+     background-size: 60px 100px;
+}
+.high {
+     background-image: url("../img/high.png");
+     background-size: 60px 100px;
+}
+.takeoff {
+     background-image: url("../img/to.png");
+     background-size: 60px 100px;
+}
+.on {
+     background-image: url("../img/on.png");
+     background-size: 60px 60px;
+}
+.off {
+     background-image: url("../img/off.png");
+     background-size: 60px 60px;
+}
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+.container {
+    padding: 20px;
+}

@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <title>Home Energy Savings</title>
     <link rel="stylesheet" href="../css/homea.css">
+    <link rel="stylesheet" href="../css/clockpicker.css">
+    <link rel="stylesheet" href="../css/standalone.css">
+    <link rel="stylesheet" href="../css/bootstrap-clockpicker.min.css">
+    <link rel="stylesheet" href="../css/jquery-clockpicker.min.css">
     <script src="../js/Chart.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/clockpicker.js"></script>
+    <script src="../js/bootstrap-clockpicker.min.js"></script>
+    <script src="../js/jquery-clockpicker.min.js"></script>
 </head>
 <body>
 
@@ -13,17 +22,24 @@
         <h1>Edit/Delete Routine</h1>
         <br/>
         <br/>
-        <h3>Item :</h3><select>
-            <option>Lights</option>
-            <option>Coffee Pot</option>
-            <option>Temperature</option>
-        </select>
+        <table align="center">
+            <tr>
+                <td><h3>Item:</h3></td>
+                <td><input type="text" value="Lights"></td>
+            </tr>
+            <tr>
+                <td><h3>Action:</h3></td>
+                <td><div id="onoff" style="width:60px;height:60px;" class="center on"></div></td>
+            </tr>
+        </table>
+
         <br/>
-        <h3>Action :</h3><select>
-            <option>On</option>
-            <option>Off</option>
-        </select>
-        <p>6:45 AM</p>
+        <br/>
+        <div class="container">
+            <input id="input-a" value="" data-default="20:48">
+            <button type="button" id="button-a">Set  minutes</button>
+            <button type="button" id="button-b">Set  hours</button>
+        </div>
         <br/>
         <br/>
         <input type="button" onclick="location.href='./editroutine2.html';" value="Apply Changes" />

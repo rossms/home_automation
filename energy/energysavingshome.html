@@ -42,13 +42,25 @@
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero:true,
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of kWh Used'
+                    }
+                }],
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Day of Month'
                     }
                 }]
             }
         }
     });
     </script>
+    <br/>
+    <br/>
     <input class="center" type="button" onclick="location.href='./energybreakdown.html';" value="See energy breakdown" />
     <h3>You saved $38.23 last month by living without AC!</h3>
     <input class="center" type="button" onclick="location.href='./energysuggestions.html';" value="Suggestions" />

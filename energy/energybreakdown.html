@@ -15,7 +15,7 @@
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["Fridge/Stove", "Heating/Cooling", "Water Heater", "Other"],
+            labels: ["Fridge/Stove", "Heat/AC", "Water Heater", "Other"],
             datasets: [{
                 label: 'Energy Use',
                 data: [107,289,92,100],
@@ -42,7 +42,17 @@
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero:true,
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of kWh Used'
+                    }
+                }],
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Household Item'
                     }
                 }]
             }
