@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/homea.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -20,32 +23,80 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <div class="mobilerender">
-            <div class="center">
-                <h1>Home Automation Home Screen</h1>
-                <br/>
-                <br/>
-                <h3>Energy Savings</h3>
-                <img src="./img/icons8-Energy-Meter-50.png" onclick="location.href='./energy/energysavingshome.html';">
-                <br/>
-                <br/>
-                <h3>Fan Control</h3>
-                <img src="./img/icons8-Fan-Head-50.png" onclick="location.href='./fan/fanhome.html';">
-                <br/>
-                <br/>
-                <h3>Routines</h3>
-                <img src="./img/icons8-Clock-50.png" onclick="location.href='./routine/routinehome.html';">
+        <!-- Content Start -->
+        <div class="container demo-1">
+            <header class="clearfix">
+                <h1>Home Automation Prototype <span>INFO 611 Drexel University</span></h1>
+            </header>
+            <div class="main clearfix">
+                <div class="column">
+                    <div id="dl-menu" class="dl-menuwrapper">
+                        <button class="dl-trigger">Open Menu</button>
+                        <ul class="dl-menu">
+                            <li>
+                                <a href="#">About</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">INFO 611</a></li>
+                                    <li><a href="#">Design Project / Inspiration</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Project Documents</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">User Personas</a></li>
+                                    <li><a href="#">Testing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Design Phases</a>
+                                <ul class="dl-submenu">
+                                    <li>
+                                        <a href="#">Phase 1</a>
+                                        <ul class="dl-submenu">
+                                            <li><a href="#">Phase 1 Prototype</a></li>
+                                            <li><a href="#">Phase 1 Design Rationale</a></li>
+                                            <li><a href="#">Phase 1 Appendix</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phase 2</a>
+                                        <ul class="dl-submenu">
+                                            <li><a href="#">Phase 2 Prototype</a></li>
+                                            <li><a href="#">Phase 2 Design Rationale</a></li>
+                                            <li><a href="#">Phase 2 Appendix</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phase 3</a>
+                                        <ul class="dl-submenu">
+                                            <li><a href="#">Phase 3 Prototype</a></li>
+                                            <li><a href="#">Phase 3 Design Rationale</a></li>
+                                            <li><a href="#">Phase 3 Appendix</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /dl-menuwrapper -->
+                </div>
             </div>
-        </div>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        </div><!-- /container -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.dlmenu.js"></script>
+        <script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+        <!-- Content End -->
+<!--        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
+        <script src="js/main.js"></script>-->
+        <div class="background"></div>
 
 
     </body>
 </html>
 <!-- https://icons8.com/ -->
+<!-- https://github.com/codrops/ResponsiveMultiLevelMenu -->
