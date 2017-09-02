@@ -84,3 +84,20 @@ body {
     padding: 20px;
     background-color:#477AC9;
 }
+.bodycontent {
+   display: block;
+   margin: auto;
+   text-align: left;
+   padding: 10px;
+}
+.bodycontent h2 {
+   text-align: center;
+}
+.bodycontent table {
+    margin: auto;
+    width: 75%;
+}
+.bodycontent table td {
+   padding: 5px;
+   border: 1px solid black;
+}
